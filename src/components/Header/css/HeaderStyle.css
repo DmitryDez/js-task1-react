@@ -1,0 +1,15 @@
+.header{
+  height: 65px;
+
+  text-align: center;
+  font-size: 25px;
+
+  background-color: #3c6382;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.header-title{
+  margin: 0;
+  padding: 0;
+}

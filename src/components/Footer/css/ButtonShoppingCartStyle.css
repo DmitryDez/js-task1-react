@@ -1,0 +1,27 @@
+.button-shopping-cart-box{
+  margin-bottom: 20px;
+
+  width: 100%;
+  height: 50px;
+}
+
+.button-shopping-cart-box button{
+  margin-left:     5%;
+  margin-top:    0;
+
+  width: 200px;
+  height: 45px;
+
+  font-size: 27px;
+
+  cursor: pointer;
+}
+
+.button-shopping-cart-box button:hover{
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.button-shopping-cart-box button:active{
+  font-size: 26px;
+}

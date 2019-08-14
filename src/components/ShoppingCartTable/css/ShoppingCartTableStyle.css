@@ -1,0 +1,125 @@
+.main{
+  margin:     auto;
+  margin-top: 50px;
+  padding:    15px;
+
+  width: 1000px;
+}
+.shopping-cart-table{
+  margin:         auto;
+  margin-bottom: 100px;
+
+  width: 100%;
+
+  border-spacing: 0;
+
+  font-size: 40px;
+
+  background-color: white;
+
+  border: 4px solid black;
+  border-radius: 7px;
+}
+
+.shopping-cart-table caption{
+  caption-side: top;
+  text-align: left;
+
+  margin-bottom: 10px;
+  margin-left:    5px;
+
+  font-style: italic;
+  color: black;
+}
+
+.shopping-cart-table_thead th{
+  background-color: white;
+  color: black;
+
+  border: 1px solid grey;
+}
+
+.shopping-cart-table_thead th{
+  padding-top:    30px;
+  padding-bottom: 30px;
+}
+
+.shopping-cart-table tbody tr:nth-child(even){
+  background-color: #ff944d;
+}
+.shopping-cart-table tbody tr:nth-child(odd){
+  background-color: #f5d556;
+}
+
+.shopping-cart-table td{
+  border: 1px solid black;
+  color: white;
+}
+
+.shopping-cart-table th:last-child{
+  border: 1px solid black;
+}
+
+.shopping-cart-table td:first-child{
+  padding-left: 15px;
+}
+
+.shopping-cart-table td:nth-child(2),
+.shopping-cart-table td:nth-child(3),
+.shopping-cart-table td:nth-child(4){
+  text-align: center;
+}
+
+.shopping-cart-table_button-minus{
+  margin: 10px 0;
+
+  width:  100px;
+  height:  50px;
+
+  font-size: 30px;
+
+  cursor: pointer;
+}
+
+.shopping-cart-table_button-delete-all{
+  margin:      10px 0;
+  margin-left:   15px;
+  margin-right: -40px;
+
+  width:  150px;
+  height:  50px;
+
+  font-size: 25px;
+
+  cursor: pointer;
+}
+
+.shopping-cart-table_button-minus:hover,
+.shopping-cart-table_button-delete-all:hover{
+  border: 3px solid black;
+}
+
+.shopping-cart-table_button-minus:active,
+.shopping-cart-table_button-delete-all:active{
+  border: 3px solid #ccad00;
+  color: grey;
+}
+
+.shopping-cart-table_button-minus[disabled],
+.shopping-cart-table_button-delete-all[disabled]{
+  cursor: default;
+}
+
+.shopping-cart-table_button-minus[disabled]:hover,
+.shopping-cart-table_button-delete-all[disabled]:hover{
+  border: none;
+}
+
+.product-ran-out-ver2 td{
+  background-color: grey;
+  opacity: 0.5;
+}
+
+.empty-td{
+  visibility: hidden;
+}
