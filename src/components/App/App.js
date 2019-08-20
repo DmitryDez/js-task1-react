@@ -20,7 +20,6 @@ class App extends React.Component{
     this.storageProductsAmount = 7;
 
     this.shoppingCartData = [];
-    this.shoppingCartProductsAmount = 0;
 
     this.state = {
       globalStateId: 0,
@@ -127,8 +126,14 @@ class App extends React.Component{
   }
 
   clearShoppingCart(){
+    if(this.shoppingCartData.length === 0) return;
+
     this.shoppingCartData = [];
     this.productsData     = [];
+
+    this.setState({ 
+      mainContent: 1,
+    });
 
     this.getProductsFromDB(this.storageProductsAmount);
   }
@@ -149,7 +154,7 @@ class App extends React.Component{
           shCartProductsAmount={this.shoppingCartData.length}
           toAddProductF={this.addProductToShoppingCart}
           toDeleteOneProductFromShoppingCartF={this.deleteOneProductFromShoppingCart}
-          toDeleteAllOfThisProductsFromShoppingCartF={this.deleteAllOfThisProductsFromShoppingCart}      
+          toDeleteAllOfThisProductsFromShoppingCartF={this.deleteAllOfThisProductsFromShoppingCart}
         />
         <Footer
           stateId={this.state.footerType}

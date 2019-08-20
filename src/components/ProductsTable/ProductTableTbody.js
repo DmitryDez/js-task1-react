@@ -20,8 +20,8 @@ function ProductTableTbody(props){
   if(rowListLength === 0){
     tbodyList = [];
 
-    tbodyList.push(<EmptyTr key="emptyTr1" />);
-    tbodyList.push(<EmptyTr key="emptyTr2" />);
+    tbodyList.push(<EmptyTr key="1" />);
+    tbodyList.push(<EmptyTr key="2" />);
 
     content = tbodyList;
   }
