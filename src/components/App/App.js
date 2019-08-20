@@ -36,7 +36,7 @@ class App extends React.Component{
     this.moveOneProductFromDBToShoppingCart = this.moveOneProductFromDBToShoppingCart.bind(this);
     this.checkForDuplicateInShoppingCart = this.checkForDuplicateInShoppingCart.bind(this);
   }
-  
+
   switchPage(){
     if(this.state.globalStateId === 0){
       this.setState({
@@ -107,6 +107,9 @@ class App extends React.Component{
     for(let i = 0; i < this.shoppingCartData.length; i++){
       if(this.shoppingCartData[i].id === product.id){
         this.shoppingCartData[i].amount--;
+        if(this.shoppingCartData[i].amount === 0){
+          this.shoppingCartData.splice(i, 1);          
+        }
       }
     }
   }
