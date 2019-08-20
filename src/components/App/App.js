@@ -108,7 +108,7 @@ class App extends React.Component{
       if(this.shoppingCartData[i].id === product.id){
         this.shoppingCartData[i].amount--;
         if(this.shoppingCartData[i].amount === 0){
-          this.shoppingCartData.splice(i, 1);          
+          this.shoppingCartData.splice(i, 1);
         }
       }
     }

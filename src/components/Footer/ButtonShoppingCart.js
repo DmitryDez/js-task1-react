@@ -1,9 +1,9 @@
 import React  from 'react';
 
-function ButtonShoppingCart(props){  
+function ButtonShoppingCart(props){
   return (
     <div className="button-shopping-cart-box">
-      <button type="button" onClick={props.onClickFunction}>
+      <button type="button" onClick={props.handleClick}>
         Shopping cart
       </button>
     </div>

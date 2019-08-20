@@ -7,7 +7,7 @@ import ButtonClearShoppingCartTable from './ButtonClearShoppingCartTable.js'
 class Footer extends React.Component{
   constructor(props){
     super(props);
-    this.content = <ButtonShoppingCart onClickFunction={this.showShoppingCart} />;
+    this.content = <ButtonShoppingCart handleClick={this.showShoppingCart} />;
 
     this.setFooter         = this.setFooter.bind(this);
     this.showShoppingCart  = this.showShoppingCart.bind(this);
@@ -16,11 +16,11 @@ class Footer extends React.Component{
 
   setFooter(){
     if(this.props.stateId === 0){
-      this.content = <ButtonShoppingCart onClickFunction={this.showShoppingCart} />;
+      this.content = <ButtonShoppingCart handleClick={this.showShoppingCart} />;
     } else{
       this.content = <div>
-        <ButtonBackToProductTable onClickFunction={this.showShoppingCart} />
-        <ButtonClearShoppingCartTable onClickFunction={this.clearShoppingCart}    />
+        <ButtonBackToProductTable     handleClick={this.showShoppingCart}   />
+        <ButtonClearShoppingCartTable handleClick={this.clearShoppingCart} />
       </div>
     }
     return this.content;
