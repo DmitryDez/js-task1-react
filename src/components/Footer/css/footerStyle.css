@@ -21,12 +21,10 @@
 
 .footer_button-products-list-box{
   margin-left: 26.3%;
-  /*background-color: darkred;*/
 }
 
 .footer_button-clear-shopping-cart-box{
   margin-left: 250px;
-  /*background-color: green;*/
 }
 
 .footer_button-clear-shopping-cart-box button,
@@ -34,7 +32,7 @@
   width: 300px;
   height: 45px;
 
-  font-size: 27px;
+  font-size: 1.9em;
 
   cursor: pointer;
 }

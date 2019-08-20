@@ -33,10 +33,10 @@ class App extends React.Component{
     this.deleteOneProductFromShoppingCart = this.deleteOneProductFromShoppingCart.bind(this);
     this.deleteAllOfThisProductsFromShoppingCart = this.deleteAllOfThisProductsFromShoppingCart.bind(this);
     this.clearShoppingCart = this.clearShoppingCart.bind(this);
-
     this.moveOneProductFromDBToShoppingCart = this.moveOneProductFromDBToShoppingCart.bind(this);
     this.checkForDuplicateInShoppingCart = this.checkForDuplicateInShoppingCart.bind(this);
   }
+  
   switchPage(){
     if(this.state.globalStateId === 0){
       this.setState({
@@ -131,7 +131,7 @@ class App extends React.Component{
     this.shoppingCartData = [];
     this.productsData     = [];
 
-    this.setState({ 
+    this.setState({
       mainContent: 1,
     });
 

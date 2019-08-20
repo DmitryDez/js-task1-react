@@ -14,7 +14,7 @@
 
   border-spacing: 0;
 
-  font-size: 40px;
+  font-size: 2.5em;
 
   background-color: white;
 
@@ -52,7 +52,7 @@
 }
 
 .products-table td:first-child{
- padding-left: 15px;
+  padding-left: 15px;
 }
 
 .products-table td:nth-child(2),
@@ -67,7 +67,7 @@
   width:  100px;
   height:  50px;
 
-  font-size: 30px;
+  font-size: 0.8em;
 
   cursor: pointer;
 }

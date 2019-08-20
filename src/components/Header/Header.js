@@ -3,7 +3,7 @@ import React from 'react';
 class Header extends React.Component {
   constructor(props){
     super(props);
-    this.headerTitle = "Products list page";
+    this.headerTitle = "Products list page";    
   }
 
   setTitle(){
@@ -16,7 +16,7 @@ class Header extends React.Component {
   }
 
   render(){
-    let title = this.setTitle();   
+    let title = this.setTitle();
 
     return (
       <header className="header">
