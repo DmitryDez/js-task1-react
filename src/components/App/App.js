@@ -79,10 +79,8 @@ class App extends React.Component{
   }
 
   checkForDuplicateInShoppingCart(product){
-    let objectValuesShoppingCartData = Object.values(this.shoppingCartData);
-
-    for(let i = 0; i < objectValuesShoppingCartData.length; i++){
-      if(objectValuesShoppingCartData[i].id === product.id){
+    for(let i = 0; i < this.shoppingCartData.length; i++){
+      if(this.shoppingCartData[i].id === product.id){
         this.shoppingCartData[i].amount++;
         return true;
       }
