@@ -18,8 +18,7 @@
 }
 
 .button-shopping-cart-box button:hover{
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px black;
+  border: 1px solid black;  
 }
 
 .button-shopping-cart-box button:active{

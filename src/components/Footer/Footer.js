@@ -18,7 +18,7 @@ class Footer extends React.Component{
     if(this.props.stateId === 0){
       this.content = <ButtonShoppingCart handleClick={this.showShoppingCart} />;
     } else{
-      this.content = <div>
+      this.content = <div className="footer_buttons-box">
         <ButtonBackToProductTable     handleClick={this.showShoppingCart}   />
         <ButtonClearShoppingCartTable handleClick={this.clearShoppingCart} />
       </div>
