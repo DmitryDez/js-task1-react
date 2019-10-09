@@ -18,7 +18,7 @@ class ProductTableRow extends React.Component{
     } else{
       this.state = {
         productAmount: this.props.productData.amount,
-        tdClassName: "product-ran-out-ver1",
+        tdClassName: "product-run-out-ver1",
         isDisabled: true
       }
     }
@@ -45,7 +45,7 @@ class ProductTableRow extends React.Component{
   componentDidUpdate(){
     if( (this.state.tdClassName === "") && (this.state.productAmount === 0) ){
       this.setState({
-        tdClassName: "product-ran-out-ver1",
+        tdClassName: "product-run-out-ver1",
         isDisabled: true
       });
     }

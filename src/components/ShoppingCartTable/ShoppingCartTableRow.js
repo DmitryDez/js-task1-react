@@ -18,7 +18,7 @@ class ShoppingCartTableRow extends React.Component{
     } else{
       this.state = {
         productAmount: this.props.productData.amount,
-        tdClassName: "product-ran-out-ver2",
+        tdClassName: "product-run-out-ver2",
         isDisabled: true
       }
     }
@@ -51,7 +51,7 @@ class ShoppingCartTableRow extends React.Component{
       amount: this.props.productData.amount
     }
 
-    if(this.state.productAmount !== 0){ //Do we need this if?
+    if(this.state.productAmount !== 0){
       this.props.deleteAllProductsFromShoppingCartF(productWeDelete);
       this.setState({
         productAmount: 0
@@ -62,7 +62,7 @@ class ShoppingCartTableRow extends React.Component{
   componentDidUpdate(){
     if( (this.state.tdClassName === "") && (this.state.productAmount === 0) ){
       this.setState({
-        tdClassName: "product-ran-out-ver2",
+        tdClassName: "product-run-out-ver2",
         isDisabled: true
       });
     }
